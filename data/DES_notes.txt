@@ -1,0 +1,55 @@
+http://www.ctio.noao.edu/noao/content/dark-energy-camera-decam
+
+Updated DES throughput curves with full-size filters
+----------------------------------------------------
+
+Please note the following:
+
+
+(1)  The filter transmissions are now those measured (area-weighted) 
+     for the full-size (620-mm) filters. 
+     
+(2)  The CCD QE curve has been multiplied by 0.88 to make 
+     the QE curve peak at about 0.9.  The peak was > 1 before 
+     as it was a relative QE curve.
+     
+(3)  For the primary mirror, we are still using the CFHT primary mirror
+     file.  Rich Kron had supplied Tim Abbott's document with Blanco primary 
+     reflectivity numbers for May 2010.  These latest Blanco numbers are 
+     very similar to the values in the CFHT file where they overlap, but 
+     the CFHT data are much better sampled in wavelength and so we are
+     keeping them for the throughput files.
+
+(4)  For the corrector we are keeping the CFHT MegaPrime numbers as a
+     placeholder, as curves for the DECam correctors including the
+     anti-reflection coatings are not yet available.  Darren DePoy
+     indicated that in grizy the corrector transmission should be >0.82
+     (0.93 for the uncoated C1 lens, and >0.97 for each of the other 4
+     coated lenses). The CFHT MegaPrime numbers are close to this, 
+     so this file is not updated for now.
+
+(5)  Atmospheric extinction, at an airmass (~sec-Z) of 1.30 and an altitude 
+     of 2200 metres above mean sea level, is included using the atmospheric 
+     extinction function for Palomar mountain.
+
+(6)  In some filters, there is evidence of out-of-passband signal, especially 
+     for Lambda < 4500A. This effect is however not real, and is a light-leak 
+     artefact of the filter manufacturer's test-bed measurement techniques.
+
+
+Many thanks to Huan Lin and Brenna Flaugher for providing data files and 
+throughput models for the optics and atmospherics. 
+
+David James
+djj@ctio.noao.edu
+CTIO
+20 March 2012
+
+Eric Bellm, July 19 2012:
+
+The filter curves in these files include light leaks due to the testing setup,
+per the DES-Filter-curves.xlsx from Brenna Flaugher:
+"Raw data - out of band performance is not correct because the system to measure the large filter has light leaks"
+These are corrected with the witness samples:
+"Raw data for in band performance, witness sample data used for out of band performance"
+
