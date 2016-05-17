@@ -1,9 +1,7 @@
 
 from Efficiency import Efficiency
 from Magnitudes import ABmag2flux
-from Camera import PTF_cam, ZTF_cam, LFC_cam, WaSP_cam
-from Camera import WIYN_cam, DECam, ATLAS_cam, LSST_cam
-from Camera import BlackGEM_cam
+from Camera import PTF_cam, ZTF_cam, DECam,  LSST_cam
 import Atmosphere
 import numpy as N
 from scipy import integrate
